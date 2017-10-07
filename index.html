@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Giphy API</title>
+  	<!--jQuery -->
+  		<script   src="https://code.jquery.com/jquery-3.1.1.min.js"
+  		integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  		crossorigin="anonymous"></script>
+  	<!-- Boostrap -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<!-- CSS -->
+		<link rel="stylesheet" href="assets/css/style.css">
+	
+</head>
+
+<body>
+
+	<div class=container-fluid>
+		<div class="row text-center">
+			<div class="col-sm-12">
+				<h3>Giphy Fun</h1>
+				<h5>Click the Buttons below to get gifs, or create your own by entering a phrase in search box and click on Generate.</h5>
+			</div>
+		</div>
+
+	
+		<!-- Form containing input box and main buttons -->
+		<div class="container">
+			<form id="giphySearch" class="text-center">
+				<div class="row">
+					<div class="col-sm-12">
+						<input class="text-center" type="text" id="searchPhrase" placeholder="Giphy search term" required>
+					  	<button type="submit" class="button btn-2 btn-2c" id="addToButtons">Generate button</button>
+					  	<button class="button btn-2 btn-2c" id="clearDisplay">Clear Gifs</button>
+				  	</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 text-center">
+						<h5 id="duplicatePrompt">There's a button for it already.</h5>
+					</div>
+				</div>
+			</form>
+		</div>
+		<!-- Div to display dynamically generated buttons -->
+		<div class="row text-center">
+			<div class="col-xs-12 text-center">
+				<div id="buttonDisplay" class="text-center"></div>
+			</div>
+		</div>
+		<!-- Div to display gifs from Giphy -->
+		<div class="row">
+			<div class="col-xs-12 text-center">
+				<p id="message">Click on the gifs below, and watch it animate. Click again to stop it.</p>
+				<div id="giphyDisplay" class="text-center"></div>
+			</div>
+		</div>
+	</div>
+
+	<!--Javascript -->
+	<script  src="assets/javascript/app.js"></script>	
+
+</body>
+</html>
